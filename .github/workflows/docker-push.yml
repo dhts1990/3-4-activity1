@@ -31,7 +31,7 @@ jobs:
 
       - name: Build, tag, and push image to ECR
         run: |
-          IMAGE_URI=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}
+          IMAGE_URI=${{ env.ECR_REGISTRY }}
           IMAGE_TAG=${{ github.sha }}
 
           echo "Building image with tags: $IMAGE_TAG and latest"
